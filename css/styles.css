@@ -2,6 +2,7 @@
   --main-title-color: #212121;
   --second-title-color: #ffffff;
   --main-text-color: #757575;
+  --second-text-color: #ffffff;
   --accent-color: #2196f3;
   --link-accent-color: #7d7d7d;
   --icon-accent-color: #ffffff;
@@ -21,6 +22,7 @@
   --main-border-color: #ececec;
   --second-border-color: #eeeeee;
   --main-icon-color: #afb1b8;
+  --second-icon-color: #ffffff;
 }
 
 p,
@@ -245,6 +247,19 @@ img {
   width: calc((100% - 90px) / 4);
 }
 
+.features-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid #afb1b8; */
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 /* --------BUSINESS---------- */
 .business {
   padding-bottom: 94px;
@@ -281,6 +296,7 @@ img {
 .team-item {
   background-color: var(--main-bg-color);
   width: calc((100% - 90px) / 4);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .team-title {
@@ -382,6 +398,9 @@ img {
 /* --------FOOTER---------- */
 .footer {
   background-color: var(--second-bg-color);
+}
+
+.footer-contacts {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -426,6 +445,57 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer .container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-join {
+  margin-left: 70px;
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+
+.footer-action {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--second-text-color);
+}
+
+.footer-soc {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-soc-icon {
+  fill: var(--second-icon-color);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-soc-link:hover .footer-soc-icon,
+.footer-soc-link:focus .footer-soc-icon {
+  fill: var(--icon-accent-color);
+}
+
 /* -----------------------PORTFOLIO------------------------- */
 /* --------FILTER---------- */
 .filter-list {
@@ -452,6 +522,7 @@ img {
 .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--btn-text-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .filter-cards {
@@ -471,6 +542,11 @@ img {
 .filter-item {
   background-color: var(--main-bg-color);
   width: calc((100% - 60px) / 3);
+}
+
+.filter-item:hover,
+.filter-item:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .filter-title {
